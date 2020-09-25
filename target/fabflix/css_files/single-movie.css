@@ -1,0 +1,51 @@
+body{
+    background-color: black;
+}
+
+h1 {
+    font-size: 35px;
+    top: 150px;
+}
+
+h5 {
+    font-size: 20px;
+    position: relative;
+    text-align: left;
+    margin-left: 35px;
+}
+
+#sm_button{
+    position: absolute;
+    top: 100px;
+    left: 60px;
+}
+
+#add_to_cart_button{
+    display: inline-block;
+    position: relative;
+    background-color: coral;
+    color: white;
+    border-radius: 15px;
+    width: 100px;
+    height: 80px;
+    margin-left: 700px;
+    margin-top:20px;
+}
+
+.movie_form {
+    position: relative;
+
+
+}
+.panel {
+    color: white;
+    margin-top: 100px;
+    margin-left: 60px;
+    width: 80%;
+
+}
+
+.panel-body {
+    background-color: cadetblue;
+    border-radius: 15px 50px 30px;
+}

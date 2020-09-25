@@ -1,0 +1,259 @@
+body{
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+h2{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+h3{
+    font-size: 18px;
+    text-align: center;
+    color: white;
+}
+
+h4 {
+    display: inline;
+    font-size: 18px;
+}
+
+#back_to_top {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#back_to_top:hover {
+    background-color: darkblue;
+}
+.sort_button{
+    background-color: black;
+    color: dodgerblue;
+    border-radius: 8px;
+    border: 2px solid grey;
+}
+
+.sort_button:hover {background-color: #e7e7e7;}
+
+.logout_button{
+    position: absolute;
+    right: 50px;
+    display: inline-block;
+    padding: 5px 10px;
+    margin-top: 2px;
+}
+
+nav{
+    background-color: black;
+    margin-top: 10px;
+}
+
+.logo{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#advanced_form{
+    display: none;
+    margin-top: 45px;
+    border: 1px white solid;
+    border-radius: .25rem;
+    background-color: black;
+}
+
+#advanced_form input{
+    margin-bottom: 10px;
+    width: 65%;
+}
+
+#advanced_form button{
+    margin: 12px 0 16px 0;
+}
+
+
+.advanced_area{
+    position: absolute;
+    z-index: 9999;
+    right: 410px;
+}
+
+.advanced_area a{
+    float: right;
+}
+
+.search_icon{
+    color: white;
+}
+
+.search_area{
+    margin-top: 5px;
+    position: absolute;
+    right: 180px;
+}
+
+#search_input{
+    background-color : black;
+    padding-left: 10px;
+    color: white;
+}
+
+.autocomplete-suggestions{
+    background-color: black;
+    border-radius: 3px;
+    border: 1px solid white;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.autocomplete-suggestion{
+    margin: 10px 5px;
+    cursor: pointer;
+}
+
+.autocomplete-selected{
+    border-radius: 3px;
+    border: 1px solid white;
+}
+
+.search_button{
+    background: none;
+    border: none;
+    color: white;
+}
+
+.search_button:focus{
+    outline: 0 !important;
+}
+
+#p-holder{
+    color: red;
+}
+
+.btn-pri{
+    color: #fff;
+}
+
+.btn-pri:hover{
+    color: lightgray;
+    text-decoration: none;
+}
+
+.btn-pri:focus{
+    box-shadow: none;
+}
+
+.dropdown-menu2{
+    color: white;
+    background-color: black;
+    border: 1px solid rgba(255,255,255,1);
+    padding: 5px 2px;
+}
+
+
+.scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+    top: -2px;
+}
+
+.dropdown_i{
+    color: white;
+}
+
+.select_btn{
+    margin-top: 1px;
+    display: block;
+}
+
+.submenu{
+    margin-top: 0;
+}
+
+li.select_btn:hover ul.submenu{
+    display: block;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: white;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.previous {
+    background-color: darkgrey;
+    color:black;
+    border-radius: 15px;
+    padding:8px 16px;
+}
+
+.next {
+    background-color: darkgrey;
+    color:black;
+    border-radius: 15px;
+    padding: 8px 16px;
+}
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #333; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}

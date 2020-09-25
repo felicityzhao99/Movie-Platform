@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css_files/movieList.css">
+        <link rel="stylesheet" type="text/css" href="css_files/single-actor.css">
+        <title>Single Star</title>
+        <!-- This page contains basic information about a single actor -->
+    </head>
+    <body>
+
+    <nav class="navbar navbar-expand-sm">
+        <!-- Brand/logo -->
+        <a href="/fabflix/movieList.html">
+            <img class="navbar-brand logo" src="images/logo2.png" alt="logo" style="width:100px;">
+        </a>
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="movieList.html#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/fabflix/shoppingCart.html">My cart</a>
+            </li>
+
+        </ul>
+    </nav>
+
+    <h1>Star Intro</h1>
+    <button id="ss_button" class="btn btn-lg btn-dark" display="inline-block" onclick="location.replace('movieList.html');">Back</button>
+    <div class="panel">
+        <div class="panel-body">
+            <img class="profile_pic" src="images/panghu.png">
+            <div id="info">
+                <br>
+                <h5 id="star_name">Name: </h5>
+                <h5 id="year_of_birth">Year of Birth: </h5>
+                <h5 id="movies_acted">Movies: </h5>
+                <br>
+            </div>
+        </div>
+    </div>
+    </body>
+    <!-- load jQuery & our own js file-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js_files/single-actor.js"></script>
+</html>

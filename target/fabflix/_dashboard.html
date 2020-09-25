@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css_files/dashboard.css">
+        <title>Fabflix Dashboard</title>
+    </head>
+    <body>
+        <h1 id="warning">Need Permission to Access</h1>
+        <button id="logout_btn" onclick="logout();" class="btn">Log out</button>
+        <div id="c1" class="container">
+            <form id="login_form2" action="/" method="post">
+                <div class="form-group">
+                    <label for="email">Email address:</label>
+                    <input type="email" class="form-control" placeholder="Enter email" id="email" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" placeholder="Enter password" id="pwd" name="password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Log in</button>
+            </form>
+            <div id="login_error_message" class="error_msg"></div>
+        </div>
+        <div id="panel">
+            <button class="btn btn-primary" style="margin-right: 30px;" onclick="showForm('c2');">Add star</button>
+            <button class="btn btn-success" style="margin-right: 30px;" onclick="showForm('c3');">Show databases</button>
+            <button class="btn btn-warning" onclick="showForm('c4');">Add movie</button>
+            <div id="c2" class="container">
+                <form id="starform" action="/" method="post">
+                    <div class="form-group">
+                        <label>Star name:</label>
+                        <input type="text" class="form-control" placeholder="Enter star name" name="starname" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Birth year:</label>
+                        <input type="number" class="form-control" placeholder="Enter birth year (optional)" name="birthyear" min="1800" max="2020">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Insert Star</button>
+                </form>
+                <div id="login_error_message2" class="error_msg" ></div>
+            </div>
+            <div id="c4" class="container">
+                <form id="movieform" action="/" method="post">
+                    <div class="form-group">
+                        <label>Movie title:</label>
+                        <input type="text" class="form-control" placeholder="Enter movie name" name="title" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Director:</label>
+                        <input type="text" class="form-control" placeholder="Enter director name" name="director" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Year:</label>
+                        <input type="number" class="form-control" placeholder="Enter year" name="year" min="1800" max="2020" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Genre:</label>
+                        <input type="text" class="form-control" placeholder="Enter genre" name="genre" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Star:</label>
+                        <input type="text" class="form-control" placeholder="Enter star name" name="star" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Insert Movie</button>
+                </form>
+                <div id="login_error_message4" class="error_msg" ></div>
+            </div>
+            <div id="c3" class="container">
+                <p class="database_title">Database</p>
+                <table class="table table-dark">
+                    <thead>
+                    <tr>
+                        <th>Table name</th>
+                        <th>Attributes</th>
+                        <th>Data type</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <select id="table_name">
+                                    <option value="customers">customers</option>
+                                    <option value="creditcards">creditcards</option>
+                                    <option value="employees">employees</option>
+                                    <option value="genres">genres</option>
+                                    <option value="genres_in_movies">genres_in_movies</option>
+                                    <option value="movies">movies</option>
+                                    <option value="ratings">ratings</option>
+                                    <option value="sales">sales</option>
+                                    <option value="stars">stars</option>
+                                    <option value="stars_in_movies">stars_in_movies</option>
+                                </select>
+                            </td>
+                            <td id="table_attribute">
+                                id<br>
+                                firstName<br>
+                                lastName<br>
+                                ccId<br>
+                                address<br>
+                                email<br>
+                                password</td>
+                            <td id="table_data">
+                                int<br>
+                                varchar<br>
+                                varchar<br>
+                                varchar<br>
+                                varchar<br>
+                                varchar<br>
+                                varchar<br>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <footer id="footer">
+            <a href="/fabflix/index.html">Back to home</a>
+        </footer>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js_files/dashboard.js"></script>
+</html>

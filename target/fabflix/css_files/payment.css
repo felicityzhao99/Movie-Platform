@@ -1,0 +1,22 @@
+h1 {
+    margin-bottom: 10px;
+}
+h2 {
+    margin-bottom: 10px;
+    color:darkorange;
+}
+
+#payment_form{
+    width: 80%;
+    align-content: center;
+    margin: auto;
+    padding: 50px 100px 30px 100px;
+    background-color: cornflowerblue;
+    color: black;
+    border-radius: 20px;
+}
+
+#user_error_message {
+    color: red;
+}
+

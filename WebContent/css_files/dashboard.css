@@ -1,0 +1,76 @@
+body{
+    background: linear-gradient(180deg, rgba(115,107,255,1) 0%, rgba(20,201,197,1) 35%, rgba(0,212,255,1) 100%) no-repeat fixed;
+    text-align: center;
+}
+
+h1{
+    padding-top: 3%;
+    padding-bottom: 5%;
+    color: red;
+    animation: opacity-change 1s infinite;
+}
+
+.form-group{
+    width: 30%;
+    margin: auto auto 3%;
+}
+
+button{
+    margin-top: 20px;
+}
+
+#logout_btn{
+    margin-left: 20px;
+    display: none;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.error_msg{
+    padding-top: 30px;
+    color: red;
+    font-size: 1.5em;
+}
+
+@keyframes opacity-change {
+    0% { opacity: 1; }
+    25% { opacity: 0.95; }
+    50% { opacity: 0.9; }
+    75% { opacity: 0.85; }
+    100% { opacity: 0; }
+}
+
+#c2{
+    display: none;
+    margin-top: 100px;
+}
+
+#c3{
+    display: none;
+    margin-top: 50px;
+}
+
+#c4{
+    display: none;
+    margin-top: 50px;
+}
+
+#panel{
+    display: none;
+}
+
+.database_title{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+footer{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+a{
+    font-size: 1.5rem;
+    color: black;
+}

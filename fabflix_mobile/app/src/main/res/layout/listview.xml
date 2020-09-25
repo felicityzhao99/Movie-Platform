@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:paddingBottom="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="16dp"
+                android:background="@color/silver">
+    <SearchView
+            android:id="@+id/search_movie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:queryHint="Search Movie..."
+            android:focusable="false"
+            android:iconifiedByDefault="true"
+            />
+
+    <TextView
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:text = "Movie List"
+            android:id = "@+id/title"
+            android:layout_centerHorizontal = "true"
+            android:textColor = "@color/purple"
+            android:fontFamily="@font/chelseamarket_regular"
+            android:textSize = "30dp"
+            android:layout_marginTop="50dp"/>
+
+    <Button
+            android:id = "@+id/prev"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:text="Prev"
+            android:layout_alignTop="@+id/title"
+            android:layout_alignLeft="@+id/list"
+            />
+
+    <Button
+            android:id = "@+id/next"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:text="Next"
+            android:layout_alignTop="@+id/title"
+            android:layout_alignRight="@+id/list"
+    />
+
+    <ListView
+            android:layout_marginTop="100dp"
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="15dp"/>
+
+</RelativeLayout>

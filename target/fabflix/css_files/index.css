@@ -1,0 +1,51 @@
+body{
+    background-image: linear-gradient(to right, #3aafa9, #def2f1);
+}
+
+#title {
+    padding-top: 30px;
+    color: black;
+    font-family: Courier;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 90px;
+    padding-bottom: 50px;
+}
+
+#login_error_message{
+    padding-top: 30px;
+    color: red;
+}
+
+p {
+    color: darkslategrey;
+    font-size: 22px;
+    font-family: Georgia, serif;
+}
+
+div{
+    text-align: center;
+}
+
+.form-group{
+    margin: auto;
+    width: 40%;
+}
+
+
+footer{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+a{
+    font-size: 1.5rem;
+}
+
+.g-recaptcha {
+    margin: 0 auto;
+    width: 304px;
+}
+

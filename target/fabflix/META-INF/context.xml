@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Context>
+
+    <!-- Defines a Data Source Connecting to localhost moviedb -->
+    <!-- use localhost for read operations only, as the application can be hosted on master or slave -->
+    <Resource name="jdbc/moviedb"
+              auth="Container"
+              driverClassName="com.mysql.jdbc.Driver"
+              factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+              type="javax.sql.DataSource"
+              maxTotal="100" maxIdle="30" maxWaitMillis="10000"
+              username="mytestuser"
+              password="mypassword"
+              url="jdbc:mysql://localhost:3306/moviedb?cachePrepStmts=true&amp;autoReconnect=true"/>
+
+
+    <!-- use masterdb for write operations only -->
+    <Resource name="jdbc/masterdb"
+              auth="Container"
+              driverClassName="com.mysql.jdbc.Driver"
+              factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+              type="javax.sql.DataSource"
+              maxTotal="100" maxIdle="30" maxWaitMillis="10000"
+              username="mytestuser"
+              password="mypassword"
+              url="jdbc:mysql://172.31.61.9:3306/moviedb?cachePrepStmts=true&amp;autoReconnect=true"/>
+
+</Context>

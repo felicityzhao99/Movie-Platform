@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css_files/movieList.css">
+    <link rel="stylesheet" type="text/css" href="css_files/payment.css">
+    <title>Payment</title>
+    <!-- This page contains basic information about a single actor -->
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm">
+    <!-- Brand/logo -->
+    <a href="/fabflix/movieList.html">
+        <img class="navbar-brand logo" src="images/logo2.png" alt="logo" style="width:100px;">
+    </a>
+    <!-- Links -->
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="movieList.html#">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/fabflix/shoppingCart.html">My cart</a>
+        </li>
+
+    </ul>
+</nav>
+
+<div id="payment_form">
+    <h1>Congratulations!</h1>
+    <h2>Your order is on the way.</h2>
+    <table id="order_table" class="table table-dark table-hover table-striped">
+        <thread>
+            <tr>
+                <th>Sale ID</th>
+                <th>Movies</th>
+                <th>Quantities</th>
+            </tr>
+        </thread>
+        <tbody id="result_list"></tbody>
+    </table>
+
+    <h3>Total Price: $<span id="total_price"></span></h3>
+</div>
+
+</body>
+<!-- load jQuery & our own js file-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js_files/placeOrder.js"></script>
+</html>
