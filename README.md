@@ -2,7 +2,7 @@
 ![](image/first.png) ![](image/second.png) ![](image/third.png)
 
 Copyright (c) <2020>, < felicityzhao99 >
-All rights reserved.
+All rights reserved. Any copy would not be allowed, or will be reported as plagiarism. 
 
 ## Demo Setting Steps
 The steps we will introduce are about how to deploy the web app on AWS instance.
